@@ -6,7 +6,14 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import ScrollToTop from './components/ScrollToTop';
-// Add page imports here
+import AppLayout from '@/components/layout/AppLayout';
+import Overview from '@/pages/Overview';
+import TraditionalBanking from '@/pages/TraditionalBanking';
+import CryptoBanking from '@/pages/CryptoBanking';
+import Tokenization from '@/pages/Tokenization';
+import StablecoinsCBDC from '@/pages/StablecoinsCBDC';
+import TokenizedRealEstate from '@/pages/TokenizedRealEstate';
+import QuantumFinance from '@/pages/QuantumFinance';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -34,7 +41,15 @@ const AuthenticatedApp = () => {
   // Render the main app
   return (
     <Routes>
-      {/* Add your page Route elements here */}
+      <Route element={<AppLayout />}>
+        <Route path="/" element={<Overview />} />
+        <Route path="/traditional-banking" element={<TraditionalBanking />} />
+        <Route path="/crypto-banking" element={<CryptoBanking />} />
+        <Route path="/tokenization" element={<Tokenization />} />
+        <Route path="/stablecoins-cbdc" element={<StablecoinsCBDC />} />
+        <Route path="/tokenized-real-estate" element={<TokenizedRealEstate />} />
+        <Route path="/quantum-finance" element={<QuantumFinance />} />
+      </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   );
