@@ -2,7 +2,7 @@ import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import { 
   LayoutDashboard, Building2, Bitcoin, Coins, Landmark, 
-  Building, Atom, ChevronLeft, ChevronRight, TrendingUp
+  Building, Atom, ChevronLeft, ChevronRight, TrendingUp, HeartPulse
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
@@ -15,6 +15,7 @@ const navItems = [
   { path: "/stablecoins-cbdc", label: "Stablecoins & CBDCs", icon: Landmark },
   { path: "/tokenized-real-estate", label: "Tokenized Real Estate", icon: Building },
   { path: "/quantum-finance", label: "Quantum Finance", icon: Atom },
+  { path: "/financial-health", label: "Financial Health", icon: HeartPulse },
 ];
 
 export default function Sidebar({ collapsed, onToggle }) {

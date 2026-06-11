@@ -14,6 +14,7 @@ import Tokenization from '@/pages/Tokenization';
 import StablecoinsCBDC from '@/pages/StablecoinsCBDC';
 import TokenizedRealEstate from '@/pages/TokenizedRealEstate';
 import QuantumFinance from '@/pages/QuantumFinance';
+import FinancialHealth from '@/pages/FinancialHealth';
 
 const AuthenticatedApp = () => {
   const { isLoadingAuth, isLoadingPublicSettings, authError, navigateToLogin } = useAuth();
@@ -49,6 +50,7 @@ const AuthenticatedApp = () => {
         <Route path="/stablecoins-cbdc" element={<StablecoinsCBDC />} />
         <Route path="/tokenized-real-estate" element={<TokenizedRealEstate />} />
         <Route path="/quantum-finance" element={<QuantumFinance />} />
+        <Route path="/financial-health" element={<FinancialHealth />} />
       </Route>
       <Route path="*" element={<PageNotFound />} />
     </Routes>
