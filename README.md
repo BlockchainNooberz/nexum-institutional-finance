@@ -1,39 +1,38 @@
-**Welcome to your Base44 project** 
+# Nexum Institutional Finance 🏦📈
 
-**About**
+> Enterprise-grade institutional finance platform for deal flow, capital markets, and asset management
 
-View and Edit  your app on [Base44.com](http://Base44.com) 
+Nexum is a comprehensive institutional finance platform designed for investment banks, private equity firms, hedge funds, and family offices. It centralizes deal flow management, capital allocation tracking, and institutional relationship management in a single intelligent workspace.
 
-This project contains everything you need to run your app locally.
+## Features
+- 💼 **Deal Flow CRM** — manage the full lifecycle of investment opportunities from sourcing to close
+- 📊 **Capital Markets Dashboard** — real-time monitoring of fixed income, equity, and alternative asset positions
+- 🤝 **LP/Investor Relations Portal** — automated reporting, capital call management, and investor communications
+- 🧮 **Financial Modeling Suite** — DCF, LBO, and comparable company analysis tools with AI-assisted inputs
+- 🔍 **Due Diligence Tracker** — structured workflow for managing M&A and PE due diligence processes
+- 📑 **Term Sheet Generator** — AI-assisted drafting of term sheets, LOIs, and investment memos
 
-**Edit the code in your local development environment**
+## Tech Stack
+- **Frontend:** React / Base44 UI
+- **Backend:** Base44 serverless functions + entity system
+- **Integrations:** Bloomberg, PitchBook, CapIQ data connectors
+- **AI:** Investment memo drafting, deal scoring, and market intelligence synthesis
 
-Any change pushed to the repo will also be reflected in the Base44 Builder.
+## Target Users
+- Private equity and venture capital firms
+- Investment banking deal teams
+- Family office investment operations
+- Hedge fund portfolio management teams
 
-**Prerequisites:** 
-
-1. Clone the repository using the project's Git URL 
-2. Navigate to the project directory
-3. Install dependencies: `npm install`
-4. Create an `.env.local` file and set the right environment variables
-
+## Getting Started
+```bash
+git clone https://github.com/BlockchainNooberz/nexum-institutional-finance
+cd nexum-institutional-finance
+npm install
+npm run dev
 ```
-VITE_BASE44_APP_ID=your_app_id
-VITE_BASE44_APP_BASE_URL=your_backend_url
 
-e.g.
-VITE_BASE44_APP_ID=cbef744a8545c389ef439ea6
-VITE_BASE44_APP_BASE_URL=https://my-to-do-list-81bfaad7.base44.app
-```
-
-Run the app: `npm run dev`
-
-**Publish your changes**
-
-Open [Base44.com](http://Base44.com) and click on Publish.
-
-**Docs & Support**
-
-Documentation: [https://docs.base44.com/Integrations/Using-GitHub](https://docs.base44.com/Integrations/Using-GitHub)
-
-Support: [https://app.base44.com/support](https://app.base44.com/support)
+## About
+Built by **Andrew Elston** — institutional fintech developer and capital markets technologist.
+- GitHub: [BlockchainNooberz](https://github.com/BlockchainNooberz)
+- Contact: andrewelston177@gmail.com
